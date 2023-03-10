@@ -401,7 +401,7 @@
 
 .container .container-cards .Quick-show .containerImage {
     position: relative;
-    height: 70vh;
+    height:66vh;
     border-radius: 15px;
     margin: 0 0 22px 0;
     overflow: hidden;
@@ -473,6 +473,12 @@
 
     .container .container-cards .card {
         width: 300px;
+    }
+    .container .container-cards .Quick-show .containerImage{
+        height:60vh;
+        }
+    .container .container-cards .Quick-show {
+    height: 91vh;
     }
 }
 
@@ -587,6 +593,7 @@
     }
     .apear {
         max-width:95vw;
+        overflow: hidden;
 
     }
     .container .container-cards .apear .main-menu {
@@ -614,6 +621,18 @@
     .main-menu .mainText{
         width:60vw;
     }
+
+    .container .container-cards .Quick-show .containerImage {
+        height: 30vh;
+    }
+    .container .container-cards .Quick-show {
+        width: 80vw;
+        height: 60vh;
+    }
+    .container .container-cards .Quick-show h1{
+
+        font-size: 18px;
+    }
 }
 
 @media(max-width:285px) {
@@ -626,5 +645,5 @@
     .main-menu .mainText{
         width:47vw;
     }
-
 }
+
