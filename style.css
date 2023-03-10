@@ -475,10 +475,11 @@
         width: 300px;
     }
     .container .container-cards .Quick-show .containerImage{
-        height:60vh;
+        height:50vh;
         }
     .container .container-cards .Quick-show {
-    height: 91vh;
+        width:60vw;
+    height: 80vh;
     }
 }
 
@@ -496,11 +497,11 @@
         padding-top: 0px; 
     }
     .container .container-cards .Quick-show .containerImage {
-        height: 50vh;
+        height: 45vh;
     }
     .container .container-cards .Quick-show {
         width: 70vw;
-        height: 80vh;
+        height:70vh;
     }
     .container .container-cards .ContainerShow .ExitIcon svg,
     .container .container-cards .ContainerShow .ExitIcon{
