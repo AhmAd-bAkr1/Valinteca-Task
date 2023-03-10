@@ -552,7 +552,7 @@
 
     }
 .apear {
-    right: 0;
+    right:2px;
 }
 .container .navbar .counter{
     right: 2px;
@@ -562,7 +562,6 @@
 
 @media(max-width:380px) {
     .container .container-cards {
-        /* padding: 20px; */
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -570,7 +569,6 @@
     }
 
     .container .container-cards .card {
-        /* width:38vw; */
         padding: 6px;
     }
     .container .container-cards .card .containerImage {
@@ -592,7 +590,7 @@
 
     }
     .container .container-cards .apear .main-menu {
-        width:95vw;
+        width: 92vw ;
     }
    
     .container .container-cards .card .icon, 
