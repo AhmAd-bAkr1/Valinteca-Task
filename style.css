@@ -34,7 +34,7 @@
     padding: 25px;
     background-color: #ffffffff;
     border: 2px solid #e1e3e6;
-    border-radius:15px;
+    border-radius: 15px;
     transition: 0.4s;
     text-align: center;
     overflow: hidden;
@@ -56,7 +56,7 @@
 .container .container-cards .card .containerImage {
     position: relative;
     height: 296px;
-    border-radius:10px;
+    border-radius: 10px;
     margin: 0 0 22px 0;
     overflow: hidden;
 
@@ -159,7 +159,7 @@
     overflow: hidden;
     border: 3px solid #777;
     background-color: black;
-    padding:0 100px;
+    padding: 0 100px;
 }
 
 .container .navbar button {
@@ -335,7 +335,7 @@
 .container .navbar .counter {
     position: absolute;
     top: 10px;
-    right:80px;
+    right: 80px;
     width: 15px;
     height: 19px;
     background-color: red;
@@ -432,10 +432,10 @@
 .container .container-cards .ContainerShow .Quick-show .icon,
 .container .container-cards .ContainerShow .Quick-show .iconR,
 .container .container-cards .ContainerShow .Quick-show .Qview {
-    display: none!important;
+    display: none !important;
 }
 
-.container .container-cards .ContainerShow .ExitIcon, 
+.container .container-cards .ContainerShow .ExitIcon,
 .container .container-cards .ContainerShow .ExitIcon svg {
     position: absolute;
     top: 40px;
@@ -444,18 +444,188 @@
     width: 50px;
     height: 50px;
     border: none;
-    cursor: pointer;    
+    cursor: pointer;
 }
-.container .container-cards .ExitIcon:hover, 
-.container .container-cards .ExitIcon svg:hover{
+
+.container .container-cards .ExitIcon:hover,
+.container .container-cards .ExitIcon svg:hover {
     transition: all 1s;
     fill: #404d61;
 }
 
-.EmptyCart{
+.EmptyCart {
     width: 350px;
     height: fit-content;
     font-size: 20px;
     text-align: center;
-    padding:18px 0;
+    padding: 18px 0;
+}
+
+
+@media(max-width:867px) {
+    .container .container-cards {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .container-cards .card {
+        width: 300px;
+    }
+}
+
+@media(max-width:710px) {
+    .container .container-cards .card {
+        width: 200px;
+        padding: 15px;
+    }
+    .container .container-cards .card .containerImage {
+        height: 220px;
+        
+    }
+    .container .container-cards .card h1{
+        font-size: 20px;
+        padding-top: 0px; 
+    }
+    .container .container-cards .Quick-show .containerImage {
+        height: 50vh;
+    }
+    .container .container-cards .Quick-show {
+        width: 70vw;
+        height: 80vh;
+    }
+    .container .container-cards .ContainerShow .ExitIcon svg,
+    .container .container-cards .ContainerShow .ExitIcon{
+        right:5px;
+        width: 35px;
+    height: 35px;
+    }
+}
+
+@media(max-width:510px) {
+    .container .container-cards .card {
+        width: 190px;
+    }
+
+    .container .container-cards .card .containerImage {
+        height:170px;
+        
+    }
+    .container .container-cards .card h1{
+        font-size: 18px;
+        padding-top: 0px; 
+    }
+    .container .navbar {
+        padding: 0 30px;
+    }
+    .container .navbar .counter {
+        top: 7px;
+    right: 13px;
+    }
+    .apear{
+        right: 25px;
+    }
+
+}
+
+@media(max-width:490px) {
+    .container .container-cards {
+        grid-gap: 28px;
+    }
+
+    .container .container-cards .card {
+        width: 140px;
+    }
+    .container .container-cards .card .containerImage {
+        height:130px;
+        
+    }
+    .container .container-cards .card h1{
+        font-size: 18px;
+        padding-top: 0px; 
+    }
+    .container .navbar {
+        padding: 0 20px;
+
+    }
+.apear {
+    right: 0;
+}
+.container .navbar .counter{
+    right: 2px;
+    top: 7px;
+}
+}
+
+@media(max-width:380px) {
+    .container .container-cards {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .container-cards .card {
+        width:90px;
+        padding: 6px;
+    }
+    .container .container-cards .card .containerImage {
+        height:110px;
+        
+    }
+    .container .container-cards .card h1{
+        font-size: 13px;
+        padding-top: 0px; 
+    }
+    .container .container-cards .card span {
+        font-size: 15px;
+    }
+    .container .container-cards .card span::after {
+        font-size: 10px;
+    }
+    .apear {
+        max-width:95vw;
+
+    }
+    .container .container-cards .apear .main-menu {
+        width:95vw;
+    }
+   .main-menu .mainText{
+        width: 155px;
+    }
+    .container .container-cards .card .icon, 
+    .container .container-cards .card .iconR, 
+    .container .container-cards .card .Qview{
+        height:15%;
+    }
+    .container .container-cards .card .icon svg, 
+    .container .container-cards .card .iconR svg{
+        width: 40px;
+        height: 40px;
+    }
+    .container .container-cards .card .Qview svg {
+        width: 27px;
+        height: 27px;
+    }
+    .EmptyCart {
+        width: 95vw;
+        padding: 10px 0;
+    }
+}
+
+@media(max-width:285px) {
+    .container .container-cards {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .container-cards .card {
+        width:90px;
+    }
 }

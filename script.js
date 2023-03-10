@@ -158,8 +158,8 @@ for (let i = 0; i < cards.length; i++) {
       ele.currentTarget.parentElement.className = "card";
       counter.innerHTML = menu.children.length -1 ;
       
-      ProductsArray.pop(product.added)
-      console.log(ProductsArray)
+      // ProductsArray.pop(product.added)
+      // console.log(ProductsArray)
       if (counter.innerHTML == 0) {
         EmptyCart.style.display = "block"   
       }else{
