@@ -89,7 +89,9 @@
 
 .container .container-cards .card .icon,
 .container .container-cards .card .iconR,
-.container .container-cards .card .Qview {
+.container .container-cards .card .Qview,
+.container .container-cards .containerShow .Quick-show .icon,
+.container .container-cards .containerShow .Quick-show .iconR{
     cursor: pointer;
     width: 50%;
     height: 50px;
@@ -102,20 +104,26 @@
 }
 
 .container .container-cards .card .icon,
-.container .container-cards .card .iconR {
+.container .container-cards .card .iconR,
+.container .container-cards .containerShow .Quick-show .icon,
+.container .container-cards .containerShow .Quick-show .iconR {
     left: 0;
     background-color: #00a8ca;
     border-right: 2px solid white;
 }
 
 .container .container-cards .card .icon:hover,
-.container .container-cards .card .iconR:hover {
+.container .container-cards .card .iconR:hover,
+.container .container-cards .containerShow .Quick-show .icon:hover,
+.container .container-cards .containerShow .Quick-show .iconR:hover {
     background-color: #00c3ff;
     transition: all 1s;
 }
 
 .container .container-cards .card .icon svg,
-.container .container-cards .card .iconR svg {
+.container .container-cards .card .iconR svg,
+.container .container-cards .containerShow .Quick-show .icon svg,
+.container .container-cards .containerShow .Quick-show .iconR svg{
     width: 60px;
     display: block;
     position: absolute;
@@ -159,7 +167,7 @@
     overflow: hidden;
     background-color: black;
     border-bottom: 4px solid #777;
-    padding: 0 100px;
+     padding: 0 100px;
 }
 
 .container .navbar button {
@@ -203,10 +211,6 @@
 }
 
 /* End Navbar */
-.container .container-cards .card .iconR {
-    display: none;
-}
-
 /* Start menu */
 
 .container .container-cards .menu {
@@ -365,23 +369,21 @@
 
 /* Start Quick Show btn */
 
-.container .container-cards .ContainerShow {
+.container .container-cards .containerShow {
     position: fixed;
     top: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #e1e3e6bc;
     z-index: 100;
     width: 100vw;
     height: 100vh;
-    display: none;
 
 }
 
 .container .container-cards .Quick-show {
     width: 50vw;
-    height: 70vh;
+    height: 74vh;
     padding: 25px;
     background-color: #ffffffff;
     border: 2px solid #e1e3e6;
@@ -389,6 +391,7 @@
     transition: 0.4s;
     text-align: center;
     overflow: hidden;
+    position: relative;
 
 }
 
@@ -428,14 +431,16 @@
     font-size: 15px;
 }
 
-.container .container-cards .ContainerShow .Quick-show .icon,
-.container .container-cards .ContainerShow .Quick-show .iconR,
-.container .container-cards .ContainerShow .Quick-show .Qview {
-    display: none !important;
+.container .container-cards .containerShow .Quick-show .Qview {
+    display: none;
+}
+.container .container-cards .containerShow .Quick-show .icon,
+.container .container-cards .containerShow .Quick-show .iconR{
+    width: 100%;
 }
 
-.container .container-cards .ContainerShow .ExitIcon,
-.container .container-cards .ContainerShow .ExitIcon svg {
+.container .container-cards .containerShow .exitIcon,
+.container .container-cards .containerShow .exitIcon svg {
     position: absolute;
     top: 40px;
     right: 40px;
@@ -446,13 +451,13 @@
     cursor: pointer;
 }
 
-.container .container-cards .ExitIcon:hover,
-.container .container-cards .ExitIcon svg:hover {
+.container .container-cards .exitIcon:hover,
+.container .container-cards .exitIcon svg:hover {
     transition: all 1s;
     fill: #404d61;
 }
 
-.EmptyCart {
+.emptyCart {
     width: 350px;
     height: fit-content;
     font-size: 20px;
@@ -530,8 +535,8 @@
         height: 75vh;
     }
 
-    .container .container-cards .ContainerShow .ExitIcon svg,
-    .container .container-cards .ContainerShow .ExitIcon {
+    .container .container-cards .containerShow .exitIcon svg,
+    .container .container-cards .containerShow .exitIcon {
         right: 5px;
         width: 35px;
         height: 35px;
@@ -708,7 +713,7 @@
         height: 27px;
     }
 
-    .EmptyCart {
+    .emptyCart {
         width: 95vw;
         padding: 10px 0;
     }
@@ -767,4 +772,16 @@
     .container .container-cards .Quick-show span::after {
         font-size: 11px;
     }
+}
+
+
+
+.add{
+    display: block ;
+}
+.remove{
+    display: none ;
+}
+.flex{
+    display: flex;
 }
