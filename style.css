@@ -24,7 +24,7 @@
     place-items: center;
     background-color: #f4f4f4;
     font-family: Rubik;
-
+    margin-top:70px;
 }
 
 .container .container-cards .card {
@@ -161,13 +161,15 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
-    position: relative;
+    position: fixed;
+    top:0;
     width: 100%;
     height: 70px;
     overflow: hidden;
     background-color: black;
     border-bottom: 4px solid #777;
      padding: 0 100px;
+     z-index: 200;
 }
 
 .container .navbar button {
@@ -217,7 +219,7 @@
     display: none;
 }
 
-.container .container-cards .apear .main-menu {
+.container .container-cards .main-menu {
     display: flex;
     align-items: center;
     position: relative;
@@ -231,18 +233,18 @@
     overflow: hidden;
 }
 
-.container .container-cards .apear .main-menu:hover {
+.container .container-cards .main-menu:hover {
     border-color: #ffffffff;
     transform: translateY(-1px);
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
 }
 
-.container .container-cards .apear .main-menu h1 {
+.container .container-cards .main-menu h1 {
     color: #404d61;
     font-size: 15px;
 }
 
-.container .container-cards .apear .main-menu .containerImage {
+.container .container-cards .main-menu .containerImage {
     position: relative;
     width: 60px;
     height: 60px;
@@ -253,29 +255,29 @@
 
 }
 
-.container .container-cards .apear .main-menu .containerImage img {
+.container .container-cards .main-menu .containerImage img {
     width: 100%;
     height: 100%;
     transition: 0.4s;
 
 }
 
-.container .container-cards .apear .main-menu span {
+.container .container-cards .main-menu span {
     color: #545d6d;
     position: relative;
     display: block;
     font-size: 15px;
 }
 
-.container .container-cards .apear .main-menu span::after {
+.container .container-cards .main-menu span::after {
     content: "$";
     position: absolute;
     font-size: 10px;
 }
 
-.container .container-cards .apear .main-menu .icon,
-.container .container-cards .apear .main-menu .iconR,
-.container .container-cards .apear .main-menu .Qview {
+.container .container-cards .main-menu .icon,
+.container .container-cards .main-menu .iconR,
+.container .container-cards .main-menu .Qview {
     cursor: pointer;
     width: 35px;
     height: 20px;
@@ -287,8 +289,8 @@
     transition: 0.4s;
 }
 
-.container .container-cards .apear .main-menu .icon,
-.container .container-cards .apear .main-menu .iconR {
+.container .container-cards  .main-menu .icon,
+.container .container-cards  .main-menu .iconR {
     right: 5px;
     bottom: 5px;
     background-color: #00a8ca;
@@ -298,14 +300,14 @@
     border-radius: 3px;
 }
 
-.container .container-cards .apear .main-menu .icon:hover,
-.container .container-cards .apear .main-menu .iconR:hover {
+.container .container-cards  .main-menu .icon:hover,
+.container .container-cards  .main-menu .iconR:hover {
     background-color: #00c3ff;
     transition: all 1s;
 }
 
-.container .container-cards .apear .main-menu .icon svg,
-.container .container-cards .apear .main-menu .iconR svg {
+.container .container-cards  .main-menu .icon svg,
+.container .container-cards  .main-menu .iconR svg {
     display: block;
     position: absolute;
     width: 30px;
@@ -314,7 +316,7 @@
     left: 50%;
 }
 
-.container .container-cards .apear .main-menu .Qview {
+.container .container-cards  .main-menu .Qview {
     width: 35px;
     height: 20px;
     right: 5px;
@@ -323,11 +325,11 @@
     background-color: #03071e;
 }
 
-.container .container-cards .apear .main-menu .Qview:hover {
+.container .container-cards  .main-menu .Qview:hover {
     background-color: #004266;
 }
 
-.container .container-cards .apear .main-menu .Qview svg {
+.container .container-cards  .main-menu .Qview svg {
     width: 20px;
     height: 20px;
     display: block;
@@ -350,10 +352,10 @@
 }
 
 .apear {
-    position: absolute;
-    z-index: 1;
-    top: 60px;
-    right: 80px;
+    position: fixed;
+    z-index: 1000;
+    top: 65px;
+    right:75px;
     width: fit-content;
     height: min-content;
     border-radius: 5px;
